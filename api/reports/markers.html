@@ -1,0 +1,2330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>    vBulletin v5.7.0b1 &raquo; Markers
+</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">vBulletin v5.7.0b1</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/vBulletin.html" class="">vBulletin</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/vBApi.html" class="">vBApi</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/vBLibrary.html" class="">vBLibrary</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/vBForum.html" class="">vBForum</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/vBDatabase.html" class="">vBDatabase</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/vBUtility.html" class="">vBUtility</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+        <li><a href="">Home</a></li>
+    </ul>
+
+    <div class="phpdocumentor-row">
+        <h2 class="phpdocumentor-content__title">Markers</h2>
+
+                    <h3>Table of Contents</h3>
+            <table class="phpdocumentor-table_of_contents">
+                                                            <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/ad.php">vb/api/ad.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/content/attach.php">vb/api/content/attach.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/content/channel.php">vb/api/content/channel.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/content/photo.php">vb/api/content/photo.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/content/privatemessage.php">vb/api/content/privatemessage.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/editor.php">vb/api/editor.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/hv.php">vb/api/hv.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/node.php">vb/api/node.php</a></td>
+                            <td class="phpdocumentor-cell">3</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/options.php">vb/api/options.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/page.php">vb/api/page.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/paidsubscription.php">vb/api/paidsubscription.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/phrase.php">vb/api/phrase.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/profile.php">vb/api/profile.php</a></td>
+                            <td class="phpdocumentor-cell">3</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/reputation.php">vb/api/reputation.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/search.php">vb/api/search.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/socialgroup.php">vb/api/socialgroup.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/style.php">vb/api/style.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/template.php">vb/api/template.php</a></td>
+                            <td class="phpdocumentor-cell">3</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/user.php">vb/api/user.php</a></td>
+                            <td class="phpdocumentor-cell">5</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/vb4/activity.php">vb/api/vb4/activity.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/vb4/album.php">vb/api/vb4/album.php</a></td>
+                            <td class="phpdocumentor-cell">15</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/vb4/cms.php">vb/api/vb4/cms.php</a></td>
+                            <td class="phpdocumentor-cell">10</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/vb4/private.php">vb/api/vb4/private.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/vb4/report.php">vb/api/vb4/report.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api/widget.php">vb/api/widget.php</a></td>
+                            <td class="phpdocumentor-cell">5</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/api.php">vb/api.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/cache/apc.php">vb/cache/apc.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/cache/memcached.php">vb/cache/memcached.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/cache.php">vb/cache.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/database.php">vb/database.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/datamanager/moderator.php">vb/datamanager/moderator.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/datamanager/stylevar.php">vb/datamanager/stylevar.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/datamanager/stylevardefn.php">vb/datamanager/stylevardefn.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/datamanager/user.php">vb/datamanager/user.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/exception/404.php">vb/exception/404.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/exception/critical.php">vb/exception/critical.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/exception/reroute.php">vb/exception/reroute.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/exception.php">vb/exception.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/image/gd.php">vb/image/gd.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/image/imagick.php">vb/image/imagick.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/image.php">vb/image.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/bbcode.php">vb/library/bbcode.php</a></td>
+                            <td class="phpdocumentor-cell">9</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/attach.php">vb/library/content/attach.php</a></td>
+                            <td class="phpdocumentor-cell">3</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/channel.php">vb/library/content/channel.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/event.php">vb/library/content/event.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/link.php">vb/library/content/link.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/poll.php">vb/library/content/poll.php</a></td>
+                            <td class="phpdocumentor-cell">3</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/privatemessage.php">vb/library/content/privatemessage.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/report.php">vb/library/content/report.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/text.php">vb/library/content/text.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content/video.php">vb/library/content/video.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/content.php">vb/library/content.php</a></td>
+                            <td class="phpdocumentor-cell">16</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/fcmessaging.php">vb/library/fcmessaging.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/language.php">vb/library/language.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/node.php">vb/library/node.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/notification.php">vb/library/notification.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/product.php">vb/library/product.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/reputation.php">vb/library/reputation.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/user.php">vb/library/user.php</a></td>
+                            <td class="phpdocumentor-cell">5</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/usergroup.php">vb/library/usergroup.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/library/vb4/functions.php">vb/library/vb4/functions.php</a></td>
+                            <td class="phpdocumentor-cell">2</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/notification/content/usermention.php">vb/notification/content/usermention.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/notification/likednode.php">vb/notification/likednode.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/notification/pollvote.php">vb/notification/pollvote.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/notification/visitormessage.php">vb/notification/visitormessage.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/page.php">vb/page.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/request/web.php">vb/request/web.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/session.php">vb/session.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/string.php">vb/string.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/types.php">vb/types.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/usercontext.php">vb/usercontext.php</a></td>
+                            <td class="phpdocumentor-cell">6</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/utility/date.php">vb/utility/date.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/wysiwyghtmlparser.php">vb/wysiwyghtmlparser.php</a></td>
+                            <td class="phpdocumentor-cell">7</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/xml/import/channel.php">vb/xml/import/channel.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/xml/import/theme.php">vb/xml/import/theme.php</a></td>
+                            <td class="phpdocumentor-cell">4</td>
+                        </tr>
+                                                                                <tr>
+                            <td class="phpdocumentor-cell"><a href="reports/markers.html#vb/xml/import/widget.php">vb/xml/import/widget.php</a></td>
+                            <td class="phpdocumentor-cell">1</td>
+                        </tr>
+                                                </table>
+        
+                    <a id="vb/api/ad.php"></a>
+            <h3><abbr title="vb/api/ad.php">ad.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">704</td>
+                        <td class="phpdocumentor-cell">Fetch criteria cache by adid</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/content/attach.php"></a>
+            <h3><abbr title="vb/api/content/attach.php">attach.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">621</td>
+                        <td class="phpdocumentor-cell">fix below. I think this is actually a bug.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">738</td>
+                        <td class="phpdocumentor-cell">REPLACE USE OF serialize() above WITH json_encode ALONG W/ CORRESPONDING unserialize()</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/content/channel.php"></a>
+            <h3><abbr title="vb/api/content/channel.php">channel.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">551</td>
+                        <td class="phpdocumentor-cell">fix this check?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/content/photo.php"></a>
+            <h3><abbr title="vb/api/content/photo.php">photo.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">279</td>
+                        <td class="phpdocumentor-cell">replace this with a validate ACTION_VIEW check?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/content/privatemessage.php"></a>
+            <h3><abbr title="vb/api/content/privatemessage.php">privatemessage.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">391</td>
+                        <td class="phpdocumentor-cell">Is there any reason to delete the humanverify record after the validate() call below instead of letting the cron deal with it?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">496</td>
+                        <td class="phpdocumentor-cell">log these errors.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">564</td>
+                        <td class="phpdocumentor-cell">get this from bbcode utility in the future.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1170</td>
+                        <td class="phpdocumentor-cell">remove this function. Do not simply deprecate since</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/editor.php"></a>
+            <h3><abbr title="vb/api/editor.php">editor.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">247</td>
+                        <td class="phpdocumentor-cell">, set default values for this.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">255</td>
+                        <td class="phpdocumentor-cell">AND usergroup limit &gt; 0</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/hv.php"></a>
+            <h3><abbr title="vb/api/hv.php">hv.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">91</td>
+                        <td class="phpdocumentor-cell">- We need a better solution. This works for now but is homely</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/node.php"></a>
+            <h3><abbr title="vb/api/node.php">node.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2571</td>
+                        <td class="phpdocumentor-cell">why is setApproved() used to publish nodes?? Something does not look correct here.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2948</td>
+                        <td class="phpdocumentor-cell">if this is ever corrected/implemented, be sure to add the old owner as a member of the channel</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4844</td>
+                        <td class="phpdocumentor-cell">make a legitimate map function that we can use everywhere for this. Is &#039;contenttypeclass&#039; always set?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/options.php"></a>
+            <h3><abbr title="vb/api/options.php">options.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">391</td>
+                        <td class="phpdocumentor-cell">Use phrase API to insert phrases</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/page.php"></a>
+            <h3><abbr title="vb/api/page.php">page.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">525</td>
+                        <td class="phpdocumentor-cell">apparently JQuery will send POST data using the UTF-8 charset,</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/paidsubscription.php"></a>
+            <h3><abbr title="vb/api/paidsubscription.php">paidsubscription.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">354</td>
+                        <td class="phpdocumentor-cell">vB_Template::create() has many PHP notices. We need to fix them.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/phrase.php"></a>
+            <h3><abbr title="vb/api/phrase.php">phrase.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">330</td>
+                        <td class="phpdocumentor-cell">store this somewhere? -- might as well store phrases converted now to</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/profile.php"></a>
+            <h3><abbr title="vb/api/profile.php">profile.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">188</td>
+                        <td class="phpdocumentor-cell">is there supposed to be an else...error here for when pathinfo&#039;s empty?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">442</td>
+                        <td class="phpdocumentor-cell">check that this event is triggered when modifying the content of a subchannel</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1014</td>
+                        <td class="phpdocumentor-cell">check that this event is triggered when modifying the content of a subchannel</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/reputation.php"></a>
+            <h3><abbr title="vb/api/reputation.php">reputation.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">359</td>
+                        <td class="phpdocumentor-cell">Better permission check</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/search.php"></a>
+            <h3><abbr title="vb/api/search.php">search.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">96</td>
+                        <td class="phpdocumentor-cell">$searchType shouldn&#039;t have a default value, but be explicitely declared in each call</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/socialgroup.php"></a>
+            <h3><abbr title="vb/api/socialgroup.php">socialgroup.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">729</td>
+                        <td class="phpdocumentor-cell">this code is similar to vB_Api_Widget::saveChannel, add a library method with it?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/style.php"></a>
+            <h3><abbr title="vb/api/style.php">style.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">21</td>
+                        <td class="phpdocumentor-cell">some of these methods shouldn&#039;t be public. We should move them to vB_Library_Style instead to avoid exposing them in the API.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/template.php"></a>
+            <h3><abbr title="vb/api/template.php">template.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">605</td>
+                        <td class="phpdocumentor-cell">Product API</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">788</td>
+                        <td class="phpdocumentor-cell">Product API</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1097</td>
+                        <td class="phpdocumentor-cell">Product API</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/user.php"></a>
+            <h3><abbr title="vb/api/user.php">user.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1327</td>
+                        <td class="phpdocumentor-cell">Decide how we will handle the showavatars user option. We should add to the wireframe or remove the bitfield</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2181</td>
+                        <td class="phpdocumentor-cell">What&#039;s the difference in data between $userinfo &amp; $olduser? Why do we need both?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4685</td>
+                        <td class="phpdocumentor-cell">Should hitting a non-existent activation generate a reset email/record &amp; increment the counter?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4993</td>
+                        <td class="phpdocumentor-cell">// also add max db column length check?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">7157</td>
+                        <td class="phpdocumentor-cell">what else should we lock behind canviewmembers?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/vb4/activity.php"></a>
+            <h3><abbr title="vb/api/vb4/activity.php">activity.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">346</td>
+                        <td class="phpdocumentor-cell">Need to look into this.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">363</td>
+                        <td class="phpdocumentor-cell">TEST THIS</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">507</td>
+                        <td class="phpdocumentor-cell">This doesn&#039;t seem right but I&#039;m not going to go search around</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">669</td>
+                        <td class="phpdocumentor-cell">include this as part of the regular &#039;photo&#039; array info?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/vb4/album.php"></a>
+            <h3><abbr title="vb/api/vb4/album.php">album.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">29</td>
+                        <td class="phpdocumentor-cell">Implement when vB5 is more well defined on this feature.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">69</td>
+                        <td class="phpdocumentor-cell">Implement when vB5 is more well defined on this feature.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">88</td>
+                        <td class="phpdocumentor-cell">Change this when VBV-9148 is fixed. There is no such thing as private albums in vb5 atm.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">89</td>
+                        <td class="phpdocumentor-cell">Change this when moderation of album pictures is respected</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">147</td>
+                        <td class="phpdocumentor-cell">&#039;pictureurl&#039; =&gt; $thumbUrl,</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">152</td>
+                        <td class="phpdocumentor-cell">, moderation?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">182</td>
+                        <td class="phpdocumentor-cell">&#039;end&#039; =&gt;0,		// TODO</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">188</td>
+                        <td class="phpdocumentor-cell">&#039;personalalbum&#039; =&gt; ($album[&#039;viewperms&#039;] == 0),</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">214</td>
+                        <td class="phpdocumentor-cell">&#039;messagestats&#039; =&gt; array(</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">273</td>
+                        <td class="phpdocumentor-cell">&#039;caption_html&#039; =&gt; &#039;&#039;, // TODO</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">283</td>
+                        <td class="phpdocumentor-cell">&#039;prev_text_short&#039; =&gt; &#039;&#039;, //TODO</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">286</td>
+                        <td class="phpdocumentor-cell">&#039;next_text_short&#039; =&gt; &#039;&#039;, //TODO</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">309</td>
+                        <td class="phpdocumentor-cell">&#039;add_group_link&#039; =&gt; 0, // TODO</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">311</td>
+                        <td class="phpdocumentor-cell">&#039;moderation&#039; =&gt; 0, // TODO</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">313</td>
+                        <td class="phpdocumentor-cell">),</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/vb4/cms.php"></a>
+            <h3><abbr title="vb/api/vb4/cms.php">cms.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">289</td>
+                        <td class="phpdocumentor-cell">should this array also have any section data?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">913</td>
+                        <td class="phpdocumentor-cell">spec this.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">921</td>
+                        <td class="phpdocumentor-cell">spec this.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1052</td>
+                        <td class="phpdocumentor-cell">spec this.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1130</td>
+                        <td class="phpdocumentor-cell">What&#039;s the actual analog of the list.php vB4 page???</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1133</td>
+                        <td class="phpdocumentor-cell">Is this the expected value??</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1135</td>
+                        <td class="phpdocumentor-cell">how&#039;s this used by the app?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1142</td>
+                        <td class="phpdocumentor-cell">what is this</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1217</td>
+                        <td class="phpdocumentor-cell">What&#039;s the actual analog of the list.php vB4 page???</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1219</td>
+                        <td class="phpdocumentor-cell">Is this the expected value??</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/vb4/private.php"></a>
+            <h3><abbr title="vb/api/vb4/private.php">private.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">459</td>
+                        <td class="phpdocumentor-cell">when should a PM be read when fetched from MAPI?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/vb4/report.php"></a>
+            <h3><abbr title="vb/api/vb4/report.php">report.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">132</td>
+                        <td class="phpdocumentor-cell">does the app require these error keys to have corresponding phrases in vB5 ?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api/widget.php"></a>
+            <h3><abbr title="vb/api/widget.php">widget.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">184</td>
+                        <td class="phpdocumentor-cell">update cleanWidgetConfigData() to better handle random values coming in from above...</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">336</td>
+                        <td class="phpdocumentor-cell">this requires a phrase fetch... see addWidgetTitles</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1755</td>
+                        <td class="phpdocumentor-cell">reduce code duplication without degrading readability.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2131</td>
+                        <td class="phpdocumentor-cell">Optimization-- this information has probably already been queried somewhere</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2448</td>
+                        <td class="phpdocumentor-cell">this doesn&#039;t use pagination. If/When UI changes, use vBForum:getChannel instead</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/api.php"></a>
+            <h3><abbr title="vb/api.php">api.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">420</td>
+                        <td class="phpdocumentor-cell">Check if this is truly necessary with mobile team</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/cache/apc.php"></a>
+            <h3><abbr title="vb/cache/apc.php">apc.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">84</td>
+                        <td class="phpdocumentor-cell">This can be inherited once late static binding is available.  For now
+it has to be redefined in the child classes</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/cache/memcached.php"></a>
+            <h3><abbr title="vb/cache/memcached.php">memcached.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">102</td>
+                        <td class="phpdocumentor-cell">This can be inherited once late static binding is available.  For now
+it has to be redefined in the child classes</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/cache.php"></a>
+            <h3><abbr title="vb/cache.php">cache.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">642</td>
+                        <td class="phpdocumentor-cell">Provide more options</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/database.php"></a>
+            <h3><abbr title="vb/database.php">database.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1180</td>
+                        <td class="phpdocumentor-cell">-- need to clean up VB_AREA stuff</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/datamanager/moderator.php"></a>
+            <h3><abbr title="vb/datamanager/moderator.php">moderator.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">141</td>
+                        <td class="phpdocumentor-cell">the way we return the int value directly disallows using this method to set perms to 0.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">160</td>
+                        <td class="phpdocumentor-cell">the way we return the int value directly disallows using this method to set perms to 0.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/datamanager/stylevar.php"></a>
+            <h3><abbr title="vb/datamanager/stylevar.php">stylevar.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">581</td>
+                        <td class="phpdocumentor-cell">validate fontlist is a list of fonts, with &quot;&#039;&quot; wrapped around font names with spaces, and each font separated with a &quot;,&quot;.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/datamanager/stylevardefn.php"></a>
+            <h3><abbr title="vb/datamanager/stylevardefn.php">stylevardefn.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">130</td>
+                        <td class="phpdocumentor-cell">TEST THIS FUNCTION!!!  Coded w/o testing or reference</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/datamanager/user.php"></a>
+            <h3><abbr title="vb/datamanager/user.php">user.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1060</td>
+                        <td class="phpdocumentor-cell">we may want to allow bypasses for these types too for third party data providers. For now</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/exception/404.php"></a>
+            <h3><abbr title="vb/exception/404.php">404.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">Set the reroute path from vB_Router::$App-&gt;get404Route();</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/exception/critical.php"></a>
+            <h3><abbr title="vb/exception/critical.php">critical.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">24</td>
+                        <td class="phpdocumentor-cell">Set the reroute path from vB_Router::get500Path();</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/exception/reroute.php"></a>
+            <h3><abbr title="vb/exception/reroute.php">reroute.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">26</td>
+                        <td class="phpdocumentor-cell">Create methods to add the redirect message and the target route path.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/exception.php"></a>
+            <h3><abbr title="vb/exception.php">exception.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">195</td>
+                        <td class="phpdocumentor-cell">method not yet implemented</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">212</td>
+                        <td class="phpdocumentor-cell">$this-&gt;mailed = true;</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/image/gd.php"></a>
+            <h3><abbr title="vb/image/gd.php">gd.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1313</td>
+                        <td class="phpdocumentor-cell">Do we really care that they renamed the extension??</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/image/imagick.php"></a>
+            <h3><abbr title="vb/image/imagick.php">imagick.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">816</td>
+                        <td class="phpdocumentor-cell">force rewrite image?????</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">968</td>
+                        <td class="phpdocumentor-cell">determine based on image size (width)? whether it&#039;s best to try to fit</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/image.php"></a>
+            <h3><abbr title="vb/image.php">image.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1550</td>
+                        <td class="phpdocumentor-cell">What if the marker is split between 2 chunks?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/bbcode.php"></a>
+            <h3><abbr title="vb/library/bbcode.php">bbcode.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">142</td>
+                        <td class="phpdocumentor-cell">refactor this property</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">167</td>
+                        <td class="phpdocumentor-cell">fully update above with below...</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">180</td>
+                        <td class="phpdocumentor-cell">remove $this-&gt;forumid</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3323</td>
+                        <td class="phpdocumentor-cell">This doesn&#039;t look right to me. I feel like htmlSpecialCharsUni should be outside of the</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3338</td>
+                        <td class="phpdocumentor-cell">can legacy attachments come through here...???</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3475</td>
+                        <td class="phpdocumentor-cell">Allow $size == &#039;icon&#039; case for thumbs-only-channels??</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4329</td>
+                        <td class="phpdocumentor-cell">This doesn&#039;t look right to me. I feel like htmlSpecialCharsUni should be outside of the</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4342</td>
+                        <td class="phpdocumentor-cell">REPLACE USE OF unserialize() above WITH json_decode</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4422</td>
+                        <td class="phpdocumentor-cell">WHAT IS THIS CAPTION???</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/attach.php"></a>
+            <h3><abbr title="vb/library/content/attach.php">attach.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">696</td>
+                        <td class="phpdocumentor-cell">This needs to check signature related usergroup permissions. VBV-14819</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1634</td>
+                        <td class="phpdocumentor-cell">Remove need for $skipUploadPermissionCheck</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1690</td>
+                        <td class="phpdocumentor-cell">upload check? at the moment, all callers have already called $this-&gt;scanFileArray(...), so</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/channel.php"></a>
+            <h3><abbr title="vb/library/content/channel.php">channel.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">92</td>
+                        <td class="phpdocumentor-cell">API will no longer allow this. Remove this code as well at some point.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/event.php"></a>
+            <h3><abbr title="vb/library/content/event.php">event.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">44</td>
+                        <td class="phpdocumentor-cell">should this be LIB? API should&#039;ve checked perms..</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">201</td>
+                        <td class="phpdocumentor-cell">Event change notification.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">202</td>
+                        <td class="phpdocumentor-cell">option to skip sending notification??</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">331</td>
+                        <td class="phpdocumentor-cell">Remove this, should not be needed any longer and we can&#039;t keep supporting</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/link.php"></a>
+            <h3><abbr title="vb/library/content/link.php">link.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">357</td>
+                        <td class="phpdocumentor-cell">uncomment this when the editor is ready</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/poll.php"></a>
+            <h3><abbr title="vb/library/content/poll.php">poll.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">51</td>
+                        <td class="phpdocumentor-cell">Why do we call this when the parent::getFullContent() already called it?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">117</td>
+                        <td class="phpdocumentor-cell">we need to improve this to consider voting permissions for guests.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">480</td>
+                        <td class="phpdocumentor-cell">Should subscribers get notifications for poll votes?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/privatemessage.php"></a>
+            <h3><abbr title="vb/library/content/privatemessage.php">privatemessage.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1030</td>
+                        <td class="phpdocumentor-cell">This isn&#039;t correct. There&#039;s no guarantee the first node (or ANY node requested here) is</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/report.php"></a>
+            <h3><abbr title="vb/library/content/report.php">report.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">209</td>
+                        <td class="phpdocumentor-cell">Should we push the view check out to email listing as well?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/text.php"></a>
+            <h3><abbr title="vb/library/content/text.php">text.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1154</td>
+                        <td class="phpdocumentor-cell">figure out a way to do this in bulk</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1513</td>
+                        <td class="phpdocumentor-cell">Some legacy attachments may not be visible due to permissions. I don&#039;t think this function</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content/video.php"></a>
+            <h3><abbr title="vb/library/content/video.php">video.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">244</td>
+                        <td class="phpdocumentor-cell">Permission check</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/content.php"></a>
+            <h3><abbr title="vb/library/content.php">content.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">385</td>
+                        <td class="phpdocumentor-cell">refactor this and create a vB5_Route method to get this info,</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">503</td>
+                        <td class="phpdocumentor-cell">What is contentDupFields?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1055</td>
+                        <td class="phpdocumentor-cell">Not sure if this is actually used. The CreateContent controller</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2346</td>
+                        <td class="phpdocumentor-cell">Not sure if this is actually used. The CreateContent controller</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2943</td>
+                        <td class="phpdocumentor-cell">VM CHECKS. VM&#039;s got their own thang going on, and we should make sure that the backend &amp; front-end match. And that the different parts of the rear match</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3152</td>
+                        <td class="phpdocumentor-cell">GET RID OF $record[&#039;canremove&#039;]</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3156</td>
+                        <td class="phpdocumentor-cell">GET RID OF $record[&#039;canremove&#039;]</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3161</td>
+                        <td class="phpdocumentor-cell">, update above with the new, real moderator permission when we work on VBV-12234</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3205</td>
+                        <td class="phpdocumentor-cell">figure out what this does and remove if it does nothing</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3212</td>
+                        <td class="phpdocumentor-cell">figure out what this does and remove if it does nothing</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3236</td>
+                        <td class="phpdocumentor-cell">figure out a way to combine this &amp; the following if blocks into the</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3263</td>
+                        <td class="phpdocumentor-cell">figure out what this does and remove if it does nothing</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3457</td>
+                        <td class="phpdocumentor-cell">GET RID OF $record[&#039;canremove&#039;]</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3644</td>
+                        <td class="phpdocumentor-cell">fetch tag synonyms??</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4124</td>
+                        <td class="phpdocumentor-cell">Should this function return result of below call instead of guaranteed false if we hit this point?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">277</td>
+                        <td class="phpdocumentor-cell">finish documenting this function</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/fcmessaging.php"></a>
+            <h3><abbr title="vb/library/fcmessaging.php">fcmessaging.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1426</td>
+                        <td class="phpdocumentor-cell">do we have to validate the device token (aka registration id)?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1469</td>
+                        <td class="phpdocumentor-cell">do we have to validate the device token (aka registration id)?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/language.php"></a>
+            <h3><abbr title="vb/library/language.php">language.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">41</td>
+                        <td class="phpdocumentor-cell">add required fields as key?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/node.php"></a>
+            <h3><abbr title="vb/library/node.php">node.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1799</td>
+                        <td class="phpdocumentor-cell">instead of skipping $vmAvatar, generate a &quot;default&quot; array in case templates expect the avatar</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/notification.php"></a>
+            <h3><abbr title="vb/library/notification.php">notification.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">255</td>
+                        <td class="phpdocumentor-cell">also group by languageid for phrasing.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">626</td>
+                        <td class="phpdocumentor-cell">need to add heavy testing for the counts below</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">901</td>
+                        <td class="phpdocumentor-cell">figure out how to get rid of this double call to follow API (this is also called in</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1067</td>
+                        <td class="phpdocumentor-cell">REFACTOR CONTENT LIBRARY&#039;S sendEmailNotification()</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/product.php"></a>
+            <h3><abbr title="vb/library/product.php">product.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">160</td>
+                        <td class="phpdocumentor-cell">shouldn&#039;t subtype be empty or match $package?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/reputation.php"></a>
+            <h3><abbr title="vb/library/reputation.php">reputation.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">169</td>
+                        <td class="phpdocumentor-cell">implement guest votes?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">203</td>
+                        <td class="phpdocumentor-cell">implement guest votes?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/user.php"></a>
+            <h3><abbr title="vb/library/user.php">user.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">243</td>
+                        <td class="phpdocumentor-cell">We need to skip perm checks for this so *all* user data gets caught in the net when</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">252</td>
+                        <td class="phpdocumentor-cell">figure out what should happen with categories</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2594</td>
+                        <td class="phpdocumentor-cell">Restore the &#039;activememberdays&#039; option and use that</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">3149</td>
+                        <td class="phpdocumentor-cell">userfield scope for userlib saves???</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">4668</td>
+                        <td class="phpdocumentor-cell">All of these selects are candidates for UNBUFFERED selects, when we implement it.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/usergroup.php"></a>
+            <h3><abbr title="vb/library/usergroup.php">usergroup.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">27</td>
+                        <td class="phpdocumentor-cell">This seems to only be used by the channel XML importer.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/library/vb4/functions.php"></a>
+            <h3><abbr title="vb/library/vb4/functions.php">functions.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1376</td>
+                        <td class="phpdocumentor-cell">Implement when vB5 adds them</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1387</td>
+                        <td class="phpdocumentor-cell">Implement when vB5 adds them</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/notification/content/usermention.php"></a>
+            <h3><abbr title="vb/notification/content/usermention.php">usermention.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">93</td>
+                        <td class="phpdocumentor-cell">Add UGP</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/notification/likednode.php"></a>
+            <h3><abbr title="vb/notification/likednode.php">likednode.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">79</td>
+                        <td class="phpdocumentor-cell">Confirm this behavior, should this be if_read instead?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/notification/pollvote.php"></a>
+            <h3><abbr title="vb/notification/pollvote.php">pollvote.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">86</td>
+                        <td class="phpdocumentor-cell">Confirm this behavior, should this be if_read instead?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/notification/visitormessage.php"></a>
+            <h3><abbr title="vb/notification/visitormessage.php">visitormessage.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">393</td>
+                        <td class="phpdocumentor-cell">Do phrases like {1}: {2} that can be hard-coded concatenations require phrasing for</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/page.php"></a>
+            <h3><abbr title="vb/page.php">page.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">208</td>
+                        <td class="phpdocumentor-cell">is there any special condition to be a blog page template?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/request/web.php"></a>
+            <h3><abbr title="vb/request/web.php">web.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">43</td>
+                        <td class="phpdocumentor-cell">how should we determine this?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/session.php"></a>
+            <h3><abbr title="vb/session.php">session.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">294</td>
+                        <td class="phpdocumentor-cell">remove this.</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/string.php"></a>
+            <h3><abbr title="vb/string.php">string.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">849</td>
+                        <td class="phpdocumentor-cell">Do we really want to do this?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/types.php"></a>
+            <h3><abbr title="vb/types.php">types.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">169</td>
+                        <td class="phpdocumentor-cell">This can be inherited once late static binding is available.  For now
+it has to be redefined in the child classes</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/usercontext.php"></a>
+            <h3><abbr title="vb/usercontext.php">usercontext.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">301</td>
+                        <td class="phpdocumentor-cell">do we need a superadmin bypass here?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1130</td>
+                        <td class="phpdocumentor-cell">do we need to allow superadmin bypass for infraction masking here?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1298</td>
+                        <td class="phpdocumentor-cell">We probably need to check if any infraction groups are applied on this user and if they</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1327</td>
+                        <td class="phpdocumentor-cell">This needs to actually check. This is fairly complex, but it needs to check with</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1462</td>
+                        <td class="phpdocumentor-cell">We have a lot of cases where we do this operation:</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">2220</td>
+                        <td class="phpdocumentor-cell">... is this right? We don&#039;t check if the node is actually their own channel or anything?</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/utility/date.php"></a>
+            <h3><abbr title="vb/utility/date.php">date.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">271</td>
+                        <td class="phpdocumentor-cell">This isn&#039;t really &quot;broken&quot;, just not exactly the same. Should we</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/wysiwyghtmlparser.php"></a>
+            <h3><abbr title="vb/wysiwyghtmlparser.php">wysiwyghtmlparser.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">413</td>
+                        <td class="phpdocumentor-cell">the [^&gt;]+ breaks if there&#039;s any attribute that has &gt; in quotes before the src attribute. We need a way to handle this.</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">686</td>
+                        <td class="phpdocumentor-cell">update regex to also check that it is OUR server?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">742</td>
+                        <td class="phpdocumentor-cell">refactor create_full_url</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">797</td>
+                        <td class="phpdocumentor-cell">update regex to also check that it is OUR server?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">829</td>
+                        <td class="phpdocumentor-cell">refactor create_full_url</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1789</td>
+                        <td class="phpdocumentor-cell">use stylevar</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">1823</td>
+                        <td class="phpdocumentor-cell">use stylevar</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/xml/import/channel.php"></a>
+            <h3><abbr title="vb/xml/import/channel.php">channel.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">305</td>
+                        <td class="phpdocumentor-cell">after talking with Ed, we decided it might be best not to allow node removal at all. Need to confirm with Kevin</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/xml/import/theme.php"></a>
+            <h3><abbr title="vb/xml/import/theme.php">theme.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">126</td>
+                        <td class="phpdocumentor-cell">need to test that overwrite works correctly</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">247</td>
+                        <td class="phpdocumentor-cell">Figure out what this is used for</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">328</td>
+                        <td class="phpdocumentor-cell">should we throw an exception if no guid is provided?</td>
+                    </tr>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">679</td>
+                        <td class="phpdocumentor-cell">need better check to grab REAL files only. One approach is to use a filename prefix and check for that, like how customlanguages does it</td>
+                    </tr>
+                                </tbody>
+            </table>
+                    <a id="vb/xml/import/widget.php"></a>
+            <h3><abbr title="vb/xml/import/widget.php">widget.php</abbr></h3>
+            <table>
+                <thead>
+                <tr>
+                    <th class="phpdocumentor-heading">Type</th>
+                    <th class="phpdocumentor-heading">Line</th>
+                    <th class="phpdocumentor-heading">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td class="phpdocumentor-cell">TODO</td>
+                        <td class="phpdocumentor-cell">814</td>
+                        <td class="phpdocumentor-cell">update saved adminconfigs</td>
+                    </tr>
+                                </tbody>
+            </table>
+            </div>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="reports/markers.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
